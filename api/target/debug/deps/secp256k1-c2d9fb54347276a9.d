@@ -1,0 +1,12 @@
+/home/ivan/Dev/dc_api_test/target/debug/deps/libsecp256k1-c2d9fb54347276a9.rmeta: /home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/lib.rs /home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/macros.rs /home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/context.rs /home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/constants.rs /home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/ecdh.rs /home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/key.rs /home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/schnorrsig.rs /home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/recovery.rs
+
+/home/ivan/Dev/dc_api_test/target/debug/deps/secp256k1-c2d9fb54347276a9.d: /home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/lib.rs /home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/macros.rs /home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/context.rs /home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/constants.rs /home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/ecdh.rs /home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/key.rs /home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/schnorrsig.rs /home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/recovery.rs
+
+/home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/lib.rs:
+/home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/macros.rs:
+/home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/context.rs:
+/home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/constants.rs:
+/home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/ecdh.rs:
+/home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/key.rs:
+/home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/schnorrsig.rs:
+/home/ivan/.cargo/registry/src/index.crates.io-6f17d22bba15001f/secp256k1-0.20.3/src/recovery.rs:
