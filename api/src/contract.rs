@@ -16,7 +16,7 @@ pub async fn disperse_eth(
     let contract = Contract::from_json(
         web3.eth(),
         contract_address,
-        include_bytes!("../build/Contract.abi"),
+        include_bytes!("../../Contract/build/Contract.abi"),
     )
     .map_err(|e| web3::Error::Decoder(e.to_string()))?;
 
@@ -69,7 +69,7 @@ pub async fn disperse_erc20(
     let contract = Contract::from_json(
         web3.eth(),
         contract_address,
-        include_bytes!("../build/Contract.abi"),
+        include_bytes!("../../Contract/build/Contract.abi"),
     )
     .map_err(|e| web3::Error::Decoder(e.to_string()))?;
 
@@ -122,7 +122,7 @@ pub async fn collect_eth(
     let contract = Contract::from_json(
         web3.eth(),
         contract_address,
-        include_bytes!("../build/Contract.abi"),
+        include_bytes!("../../Contract/build/Contract.abi"),
     )
     .map_err(|e| web3::Error::Decoder(e.to_string()))?;
 
@@ -175,7 +175,7 @@ pub async fn collect_erc20(
     let contract = Contract::from_json(
         web3.eth(),
         contract_address,
-        include_bytes!("../build/Contract.abi"),
+        include_bytes!("../../Contract/build/Contract.abi"),
     )
     .map_err(|e| web3::Error::Decoder(e.to_string()))?;
 

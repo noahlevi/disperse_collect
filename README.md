@@ -45,6 +45,11 @@ First of all complile your contract
 $ truffle init && truffle compile
 ```
 
+Compile contract abi
+```bash
+$ solc --optimize --bin --abi src/Contract.sol -o build/
+```
+
 Then to execute `main.rs` script first of all you need to make build. Go to `api` dir:
 
 ```bash
