@@ -8,7 +8,7 @@ use web3::types::{Address, TransactionParameters, H256, U256};
 pub async fn disperse_eth(
     web3: web3::Web3<Http>,
     contract_address: Address,
-    // from: Address,
+    from: Address,
     recipients: Vec<Address>,
     values: Vec<U256>,
     private_key: &str,
@@ -37,7 +37,7 @@ pub async fn disperse_eth(
     let tx = TransactionParameters {
         to: Some(contract_address),
         value: U256::zero(),
-        gas: U256::from(21000), // Set appropriate gas limit
+        gas: U256::from(21000),
         gas_price: Some(web3.eth().gas_price().await?),
         data: tx_data.into(),
         ..Default::default()
@@ -59,7 +59,7 @@ pub async fn disperse_eth(
 pub async fn disperse_erc20(
     web3: web3::Web3<Http>,
     contract_address: Address,
-    // from: Address,
+    from: Address,
     token_address: Address,
     recipients: Vec<Address>,
     values: Vec<U256>,
@@ -92,7 +92,7 @@ pub async fn disperse_erc20(
     let tx = TransactionParameters {
         to: Some(contract_address),
         value: U256::zero(),
-        gas: U256::from(21000), // Set appropriate gas limit
+        gas: U256::from(21000),
         gas_price: Some(web3.eth().gas_price().await?),
         data: tx_data.into(),
         ..Default::default()
@@ -114,7 +114,7 @@ pub async fn disperse_erc20(
 pub async fn collect_eth(
     web3: web3::Web3<Http>,
     contract_address: Address,
-    // from: Address,
+    from: Address,
     senders: Vec<Address>,
     recipient: Address,
     private_key: &str,
@@ -143,7 +143,7 @@ pub async fn collect_eth(
     let tx = TransactionParameters {
         to: Some(contract_address),
         value: U256::zero(),
-        gas: U256::from(21000), // Set appropriate gas limit
+        gas: U256::from(21000),
         gas_price: Some(web3.eth().gas_price().await?),
         data: tx_data.into(),
         ..Default::default()
@@ -198,7 +198,7 @@ pub async fn collect_erc20(
     let tx = TransactionParameters {
         to: Some(contract_address),
         value: U256::zero(),
-        gas: U256::from(21000), // Set appropriate gas limit
+        gas: U256::from(21000),
         gas_price: Some(web3.eth().gas_price().await?),
         data: tx_data.into(),
         ..Default::default()

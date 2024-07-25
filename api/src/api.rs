@@ -23,7 +23,7 @@ struct ApiResponse {
 
 #[post("/disperse")]
 async fn disperse(req: web::Json<DisperseRequest>) -> impl Responder {
-    let http = Http::new("https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID").unwrap();
+    let http = Http::new("https://mainnet.infura.io/v3/PROJECT_ID").unwrap();
     let web3 = web3::Web3::new(http);
 
     let private_key = env::var("PRIVATE_KEY").expect("PRIVATE_KEY must be set");
@@ -31,8 +31,8 @@ async fn disperse(req: web::Json<DisperseRequest>) -> impl Responder {
     let recipients: Vec<Address> = req.recipients.iter().map(|r| r.parse().unwrap()).collect();
     let values: Vec<U256> = req.values.iter().map(|v| U256::from(*v)).collect();
 
-    let contract_address = "YOUR_CONTRACT_ADDRESS".parse().unwrap();
-    let from: Address = "YOUR_WALLET_ADDRESS".parse().unwrap();
+    let contract_address = "CONTRACT_ADDRESS".parse().unwrap();
+    let from: Address = "WALLET_ADDRESS".parse().unwrap();
 
     let tx_hash = if let Some(token_address) = &req.token_address {
         let token_address: Address = token_address.parse().unwrap();
@@ -77,7 +77,7 @@ struct CollectRequest {
 
 #[post("/collect")]
 async fn collect(req: web::Json<CollectRequest>) -> impl Responder {
-    let http = Http::new("https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID").unwrap();
+    let http = Http::new("https://mainnet.infura.io/v3/PROJECT_ID").unwrap();
     let web3 = web3::Web3::new(http);
 
     let private_key = env::var("PRIVATE_KEY").expect("PRIVATE_KEY must be set");
@@ -85,8 +85,8 @@ async fn collect(req: web::Json<CollectRequest>) -> impl Responder {
     let senders: Vec<Address> = req.senders.iter().map(|s| s.parse().unwrap()).collect();
     let recipient: Address = req.recipient.parse().unwrap();
 
-    let contract_address = "YOUR_CONTRACT_ADDRESS".parse().unwrap();
-    let from: Address = "YOUR_WALLET_ADDRESS".parse().unwrap();
+    let contract_address = "CONTRACT_ADDRESS".parse().unwrap();
+    let from: Address = "WALLET_ADDRESS".parse().unwrap();
 
     let tx_hash = if let Some(token_address) = &req.token_address {
         let token_address: Address = token_address.parse().unwrap();
