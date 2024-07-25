@@ -13,4 +13,4 @@ Contract/docs/
 # Dotenv file
 Contract/.env
 
-api/target/
+./api/target/
